@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>Sunset Hills | The App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/AppIcon_browser-tab.png">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="d-flex flex-column h-100" style="background-color:navajowhite">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <img src="/img/AppIcon_small.png">
+            <a class="navbar-brand" href="index.html">Sunset Hills</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/app.html">The App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/code.html">The Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://mattlane.info">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-shrink-0">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col text-center border-bottom border-dark mb-4">
+                            <h1><strong>Sunset Hills</strong></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="row mb-3 fw-bold">
+                                <p>Loan Amount</p>
+                            </div>
+                            <div class="row mb-3 fw-bold">
+                                <p>Term (months)</p>
+                            </div>
+                            <div class="row mb-3 fw-bold">
+                                <p>Interest Rate</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="row mb-3">
+                                <input type="number" class="form-control border-dark" id="loanAmount"
+                                    placeholder="Loan Amount">
+                            </div>
+                            <div class="row mb-3">
+                                <input type="number" class="form-control border-dark" id="loanTerm" placeholder="Term">
+                            </div>
+                            <div class="row mb-3">
+                                <input type="number" class="form-control border-dark" id="loanRate" placeholder="Rate">
+                            </div>
+                            <div class="row">
+                                <button id="btnCalculate"
+                                    class="btn background-color border-dark mt-2 mb-5 fw-bold">Calculate</button>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-7 border border-dark bg-white">
+                            <div class="row text-center">
+                                <h2 class="mb-4 mt-2">Your Monthly Payments</h2>
+                                <h3 class="mb-4">$ 514.74</h3>
+                            </div>
+                            <div class="col-3">
+                                <div class="row text-start mb-1 ms-2">Total Principal</div>
+                                <div class="row text-start mb-1 ms-2">Total Interest</div>
+                                <div class="row text-start ms-2">Total Cost</div>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-bordered border-dark mt-4">
+                            <thead class="bg-light">
+                                <tr class="text-center">
+                                    <th scope="col">Month</th>
+                                    <th scope="col">Payment</th>
+                                    <th scope="col">Principal</th>
+                                    <th scope="col">Interest</th>
+                                    <th scope="col">Total Interest</th>
+                                    <th scope="col">Balance</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="text-center">
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                </tr>
+                                <tr class="text-center">
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                </tr>
+                                <tr class="text-center">
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                                    <th>test</th>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container-fluid text-center text-light">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    &copy2021 <span class="text-light">Matt Lane | <img src="/img/Favicon-small.png" alt="Matt Lane"
+                            class="img-fluid"> | matthewjlane.47@gmail.com
+                    </span>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <a href="#" target="_blank"><span class="iconify" data-icon="logos:linkedin-icon"
+                            data-inline="false"></span></a>
+                    <a href="#" target="_blank"><span class="iconify" data-icon="akar-icons:github-fill"
+                            data-inline="false" style="color: #7a319a"></span></a>
+                    <a href="#" target="_blank"><span class="iconify" data-icon="logos:twitter"
+                            data-inline="false"></span></a>
+                    <a href="#" target="_blank"><span class="iconify" data-icon="logos:youtube-icon"
+                            data-inline="false"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/prism.js"></script>
+    <script src="/js/site.js"></script>
+    <script>
+        document.getElementById("btnCalculate").addEventListener("click", displayData)
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
