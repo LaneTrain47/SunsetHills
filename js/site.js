@@ -1,26 +1,30 @@
-let array1 = [3, 2, 4, 7, 6, 9];
-let array2 = [];
-let tallest = 0;
+//CONTROLLER FUNCTION
 
-function sunsetHills() {
-    array1[0] = Number(document.getElementById("building1").value);
-    array1[1] = Number(document.getElementById("building1").value);
-    array1[2] = Number(document.getElementById("building1").value);
-    array1[3] = Number(document.getElementById("building1").value);
-    array1[4] = Number(document.getElementById("building1").value);
-    array1[5] = Number(document.getElementById("building1").value);
+function getValues() {
 
-    for (i = 0; i <= array1.length; i++) {
-        if (tallest < array1[i]) {
-            tallest = array1[i];
-            array2.push(array1[i]);
-        }
-    }
-    displayResults();
+    //Retrieve values from all 6 input fields
+    let building1Value = document.getElementById("building1").value;
+    let building2Value = document.getElementById("building1").value;
+    let building3Value = document.getElementById("building1").value;
+    let building4Value = document.getElementById("building1").value;
+    let building5Value = document.getElementById("building1").value;
+    let building6Value = document.getElementById("building1").value;
+
+    //Parse to ensure that the user's inputs are interpreted as numbers
+    building1Value = parseInt(building1Value)
+    building2Value = parseInt(building2Value)
+    building3Value = parseInt(building3Value)
+    building4Value = parseInt(building4Value)
+    building5Value = parseInt(building5Value)
+    building6Value = parseInt(building6Value)
 }
 
-function displayResults() {
+//extract the numbers from each of the six fields
 
-    document.getElementById("output").innerHTML = "These buildings can see the sunset:" + array2;
 
-}
+//place the numbers into an array
+
+//evaluate the values within the array to check for building height
+
+//output the values of the taller buildings to a "can see" field,
+//and the values of the shorter buildings to a "cannot see" field

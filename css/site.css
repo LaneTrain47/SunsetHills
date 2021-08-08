@@ -8,43 +8,31 @@ main>.container {
     margin: 1em;
 }
 
-.color-LinkedInBlue {
-    color: #1163bf
+.sunsetGradient {
+    background: hsla(17, 85%, 74%, 1);
+
+    background: linear-gradient(90deg, hsla(17, 85%, 74%, 1) 0%, hsla(290, 71%, 28%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(17, 85%, 74%, 1) 0%, hsla(290, 71%, 28%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(17, 85%, 74%, 1) 0%, hsla(290, 71%, 28%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F5A282", endColorstr="#6A157B", GradientType=1);
 }
 
-.color-YouTubeRed {
-    color: #ff0a03
-}
-
-.color-TwitterBlue {
-    color: #1da1f3
-}
-
-.color-gitHubPurple {
-    color: #7a319a
-}
-
-.color-CoderFoundryOrange {
-    color: #ff993b
-}
-
-.color-JavaScriptYellow {
-    color: #f7df1e
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 }
 
 .background-color {
-    background-color: #ff993b;
+    background-color: #6a157b;
+    color: #f5a282
 }
 
 .background-color:hover {
-    background-color: black;
-    color: #ff993b;
-}
-
-.paragraph1 {
-    font-size: 20px;
-}
-
-.paragraph2 {
-    font-size: 22px;
+    background-color: #f5a282;
+    color: #6a157b;
 }
