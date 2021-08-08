@@ -4,11 +4,11 @@ function getValues() {
 
     //Retrieve values from all 6 input fields
     let building1Value = document.getElementById("building1").value;
-    let building2Value = document.getElementById("building1").value;
-    let building3Value = document.getElementById("building1").value;
-    let building4Value = document.getElementById("building1").value;
-    let building5Value = document.getElementById("building1").value;
-    let building6Value = document.getElementById("building1").value;
+    let building2Value = document.getElementById("building2").value;
+    let building3Value = document.getElementById("building3").value;
+    let building4Value = document.getElementById("building4").value;
+    let building5Value = document.getElementById("building5").value;
+    let building6Value = document.getElementById("building6").value;
 
     //Parse to ensure that the user's inputs are interpreted as numbers
     building1Value = parseInt(building1Value)
@@ -18,9 +18,6 @@ function getValues() {
     building5Value = parseInt(building5Value)
     building6Value = parseInt(building6Value)
 }
-
-//extract the numbers from each of the six fields
-
 
 //place the numbers into an array
 
