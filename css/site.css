@@ -18,6 +18,10 @@ main>.container {
     background: -webkit-linear-gradient(90deg, hsla(17, 85%, 74%, 1) 0%, hsla(290, 71%, 28%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F5A282", endColorstr="#6A157B", GradientType=1);
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
 }
 
 .center {

@@ -50,22 +50,22 @@
                 <h1 class="mt-5" style="color:white">Which buildings have the best view of the sunset?</h1>
                 <div class="row mt-5">
                     <div class="col">
-                        <input type="number" class="form-control border-dark" id="building1">
+                        <input type="number" class="form-control border-dark" id="building1" value="3">
                     </div>
                     <div class="col">
-                        <input type="number" class="form-control border-dark" id="building2">
+                        <input type="number" class="form-control border-dark" id="building2" value="2">
                     </div>
                     <div class="col">
-                        <input type="number" class="form-control border-dark" id="building3">
+                        <input type="number" class="form-control border-dark" id="building3" value="4">
                     </div>
                     <div class="col">
-                        <input type="number" class="form-control border-dark" id="building4">
+                        <input type="number" class="form-control border-dark" id="building4" value="7">
                     </div>
                     <div class="col">
-                        <input type="number" class="form-control border-dark" id="building5">
+                        <input type="number" class="form-control border-dark" id="building5" value="6">
                     </div>
                     <div class="col">
-                        <input type="number" class="form-control border-dark" id="building6">
+                        <input type="number" class="form-control border-dark" id="building6" value="9">
                     </div>
                 </div>
             </div>
@@ -89,6 +89,11 @@
             </div>
         </div>
     </div>
+
+    These buildings can see the sunset.
+    <p id="SunsetVisible"></p>
+    These buildings cannot see the sunset.
+    <p id="SunsetObscured"></p>
 
     <footer class="footer mt-auto py-3 bg-dark">
         <div class="container-fluid text-center text-light">
@@ -127,15 +132,15 @@
     <script src="/js/site.js"></script>
 
     <script>
-        document.getElementById("btnSubmit").addEventListener("click", calculate);
-        document.getElementById("btnReset").addEventListener("click", resetData);
-        document.getElementById("numberInput").addEventListener("keypress", function (
-            keyPressed) {
-            if (keyPressed.key === "Enter") {
-                keyPressed.preventDefault();
-                addNumber();
-            }
-        });
+        document.getElementById("btnSubmit").addEventListener("click", getValues);
+        //document.getElementById("btnReset").addEventListener("click", resetData);
+        //document.getElementById("numberInput").addEventListener("keypress", function (
+        // keyPressed) {
+        //     if (keyPressed.key === "Enter") {
+        //         keyPressed.preventDefault();
+        //         addNumber();
+        //     }
+        // });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
